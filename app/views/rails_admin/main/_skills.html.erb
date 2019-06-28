@@ -1,0 +1,4 @@
+<% object.users_skills.each do |u_skill| %>
+  <b><%=u_skill.skill.name %>:</b> <% u_skill.grade.times do |x| %> <b><%='*'%></b> <% end %><br>
+  <br>
+<% end %>

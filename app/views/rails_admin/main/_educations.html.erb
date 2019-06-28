@@ -1,0 +1,6 @@
+<% object.educations.each do |edu| %>
+  <b>School:</b> <%= edu.school %><br>
+  <b>Specialization:</b> <%= edu.specialization %><br>
+  <b>Start:</b> <%= edu.start.strftime("%m-%Y") %> <b>End:</b> <%= edu.end.strftime("%m-%Y") %><br>
+  <br>
+<% end %>

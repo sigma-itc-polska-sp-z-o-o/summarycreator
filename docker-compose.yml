@@ -1,0 +1,9 @@
+version: '2'
+services:
+  creator:
+    build: .
+    volumes:
+      - ./:/home/app
+    ports:
+      - 3000:3000
+    command: 'rm -f tmp/pids/server .pid && bundle exec rake db:create && bundle exec rake db:migrate && rails s'

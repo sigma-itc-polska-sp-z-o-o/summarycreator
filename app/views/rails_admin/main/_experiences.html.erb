@@ -1,0 +1,7 @@
+<% object.experiences.each do |exp| %>
+  <b>Company:</b> <%= exp.company %><br>
+  <b>Role:</b> <%= exp.role %><br>
+  <b>Start:</b> <%= exp.start.strftime("%m-%Y") %> <b>End:</b> <%= exp.end.strftime("%m-%Y") %><br>
+  <b>Description:</b><p> <%= exp.description %></p></br>
+  <br>
+<% end %>
